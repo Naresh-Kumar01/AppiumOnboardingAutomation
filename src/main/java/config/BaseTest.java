@@ -23,4 +23,8 @@ public class BaseTest {
         if (driver != null) driver.quit();
     }
 
+	public void waitForElement(MobileElement  element){
+wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
 }
